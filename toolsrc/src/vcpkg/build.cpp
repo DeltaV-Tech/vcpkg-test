@@ -220,7 +220,7 @@ namespace vcpkg::Build
         const auto arch = to_vcvarsall_toolchain(pre_build_info.target_architecture, toolset);
         const auto target = to_vcvarsall_target(pre_build_info.cmake_system_name);
 
-        return Strings::format(R"("%s" %s %s %s %s 2>&1)",
+        return Strings::format(R"("%s" %s %s %s %s -vcvars_ver=14.11 2>&1)",
                                toolset.vcvarsall.u8string(),
                                Strings::join(" ", toolset.vcvarsall_options),
                                arch,

@@ -1,0 +1,14 @@
+diff --git a/cmake/OpenCVCompilerOptions.cmake b/cmake/OpenCVCompilerOptions.cmake
+index 8f4aa3b..1ea8b1c 100644
+--- a/cmake/OpenCVCompilerOptions.cmake
++++ b/cmake/OpenCVCompilerOptions.cmake
+@@ -45,7 +45,7 @@ endif()
+ set(OPENCV_EXTRA_FLAGS "")
+ set(OPENCV_EXTRA_C_FLAGS "")
+ set(OPENCV_EXTRA_CXX_FLAGS "")
+-set(OPENCV_EXTRA_FLAGS_RELEASE "")
++set(OPENCV_EXTRA_FLAGS_RELEASE "/FS")
+ set(OPENCV_EXTRA_FLAGS_DEBUG "")
+ set(OPENCV_EXTRA_EXE_LINKER_FLAGS "")
+ set(OPENCV_EXTRA_EXE_LINKER_FLAGS_RELEASE "")
+ 
